@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>School:</strong>
+  <%= @request_item.school_id %>
+</p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @request_item.item_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @request_item.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_request_item_path(@request_item) %> |
+<%= link_to 'Back', request_items_path %>
